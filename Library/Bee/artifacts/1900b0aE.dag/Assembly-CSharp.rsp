@@ -355,6 +355,7 @@
 "Assets/Scripts/GameBehavior.cs"
 "Assets/Scripts/ItemBehavior.cs"
 "Assets/Scripts/PlayerBehavior.cs"
+"Assets/Scripts/Utilities.cs"
 -langversion:9.0
 
 /deterministic

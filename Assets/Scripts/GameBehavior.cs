@@ -59,12 +59,6 @@ public class GameBehavior : MonoBehaviour
         }
     }
 
-    void RestartLevel()
-    {
-        SceneManager.LoadScene(0);
-
-        Time.timeScale = 1.0f;
-    }
 
     void OnGUI()
     {
@@ -79,7 +73,7 @@ public class GameBehavior : MonoBehaviour
 
             if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 50, 200, 100), "YOU WON!"))
             {
-                RestartLevel();
+                Utilities.RestartLevel(0);
             }
         }
 
@@ -87,7 +81,7 @@ public class GameBehavior : MonoBehaviour
         {
             if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 50, 200, 100), "YOU LOSE!"))
             {
-                RestartLevel();
+                Utilities.RestartLevel();
             }
         }
     }
