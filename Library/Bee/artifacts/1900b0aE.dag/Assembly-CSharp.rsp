@@ -353,6 +353,7 @@
 "Assets/Scripts/CameraBehavior.cs"
 "Assets/Scripts/EnemyBehavior.cs"
 "Assets/Scripts/GameBehavior.cs"
+"Assets/Scripts/IManager.cs"
 "Assets/Scripts/ItemBehavior.cs"
 "Assets/Scripts/PlayerBehavior.cs"
 "Assets/Scripts/Utilities.cs"

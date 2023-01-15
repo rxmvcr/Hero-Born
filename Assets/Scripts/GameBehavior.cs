@@ -4,8 +4,15 @@ using UnityEngine;
 
 using UnityEngine.SceneManagement;
 
-public class GameBehavior : MonoBehaviour
+public class GameBehavior : MonoBehaviour, IManager
 {
+    private string _state;
+
+    public string State
+    {
+        get { return _state; }
+        set { _state = value; }
+    }
     public string labelText = "Collect all 4 items and win your freedom!";
     public int maxItems = 4;
 
@@ -14,6 +21,17 @@ public class GameBehavior : MonoBehaviour
     public bool showLoseScreen = false;
 
     private int _itemsCollected = 0;
+
+    void Start()
+    {
+        Initialize();
+    }
+
+    public void Initialize()
+    {
+        _state = "Manager initialized..";
+        Debug.Log(_state);
+    }
 
     public int Items
     {
